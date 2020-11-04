@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+}
+
+.sx-el {
+  display: inline-block;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.sx-el > * {
+  flex-direction: row;
+  align-items:center;
+  display: flex;
+}
+
+.sx-el > span {
+  margin-left: 10px;
+}
+
+.sx-el > img {
+  width: 50px;
+  float: left;
+  display: inline-block;
+}
+
+.dx-el {
+  position: absolute;
+  float: right;
+  display: flex;
+  bottom: 0;
+  right: 0;
+}
+
+.dx-el > * {
+  margin-right: 10px;
+  flex-direction: row;
+  align-items:center;
+  display: flex;
+}
+
+.tentFunctionalities,
+.tentSubcription,
+.tentWhoweare,
+.tentBusiness,
+.tentHelp {
+  width: 100px;
+  height: 200px;
+  background-color: purple;
+
+}
