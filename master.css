@@ -48,20 +48,24 @@ nav {
   right: 0;
 }
 
-.dx-el > * {
-  margin-right: 10px;
-  flex-direction: row;
-  align-items:center;
-  display: flex;
+.dx-el ul > li {
+  position: relative;
+  list-style: none;
+  margin-left: 10px;
+  float: left;
 }
 
-.tentFunctionalities,
-.tentSubcription,
-.tentWhoweare,
-.tentBusiness,
-.tentHelp {
+.dx-el ul li > .dropdownContent {
+  position:absolute;
+}
+
+.dropdownContent {
   width: 100px;
   height: 200px;
   background-color: purple;
+  display: none;
+}
 
+.dropdownContent.active {
+  display: block;
 }

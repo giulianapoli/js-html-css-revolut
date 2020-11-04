@@ -1,7 +1,15 @@
 $(document).ready(function() {
-  var menuEl = $('menu');
+  var optionList = $('ul li > a');
+  var dropdownMenu = $('.dropdownContent');
+  var active = $('.active')
 
-  $(menuEl).click(funtion() {
+  // console.log(dropdownMenu);
+  // console.log(optionList);
+
+
+
+  optionList.click(function (){
+    $(this).next('.dropdownContent').toggleClass('active');
 
   });
 
