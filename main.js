@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var optionList = $('ul li > a');
   var dropdownMenu = $('.dropdownContent');
-  var active = $('.active')
+  var active = $('.dropdownContent.active')
 
   // console.log(dropdownMenu);
   // console.log(optionList);
@@ -9,8 +9,9 @@ $(document).ready(function() {
 
 
   optionList.click(function (){
-    $(this).next('.dropdownContent').toggleClass('active');
 
+    $('.dropdownContent').removeClass('active');
+    $(this).next('.dropdownContent').addClass('active');
   });
 
 });
